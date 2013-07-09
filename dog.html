@@ -1,0 +1,59 @@
+<!-- 
+All of Sublime Scaffolding is licensed under the MIT license.
+
+  Copyright (c) 2013 Balaji Thota <balajithota85@gmail.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  THE SOFTWARE. -->
+
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>Pablo Picasso’s master peice "Dog"</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pablo Picasso's Dog">
+    <meta name="author" content="Balaji Thota">
+</head>
+<body>
+	<canvas id="dog" width=450 height=450></canvas>
+	<script>
+		var dog = document.getElementById('dog');
+		if ( dog.getContext ) {
+			var context = dog.getContext('2d');
+
+			context.beginPath();
+			context.moveTo(180, 280);
+			context.bezierCurveTo(183, 268, 186, 256, 189, 244);
+			context.moveTo(191, 244);
+			context.bezierCurveTo(290, 244, 300, 230, 339, 245);
+			context.moveTo(340, 246);
+			context.bezierCurveTo(350, 290, 360, 300, 355, 210);
+			context.moveTo(353, 210);
+			context.bezierCurveTo(370, 207, 380, 196, 375, 193);
+			context.bezierCurveTo(310, 220, 190, 220, 164, 205);
+			context.bezierCurveTo(135, 194, 135, 265, 153, 275);
+			context.bezierCurveTo(168, 275, 170, 180, 150, 190);
+			context.moveTo(149, 190);
+			context.bezierCurveTo(122, 214, 142, 204, 85, 240);
+			context.moveTo(86, 240);
+			context.bezierCurveTo(100, 247, 125, 233, 140, 238);
+			context.stroke();
+		}
+	</script>
+</body>
+</html>
